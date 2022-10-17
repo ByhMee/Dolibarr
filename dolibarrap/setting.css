@@ -1,0 +1,134 @@
+:root {
+    --ColorBG:rgb(255, 255, 255);
+}
+
+::-moz-selection{           /* Change la couleur quand on surligne un élément */
+    background-color : rgb(130, 217, 207);
+    color : #fff
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    height: 95vh;
+    width: 100%;
+
+    background-color: var(--ColorBG);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* HEADER */
+
+#nav {
+    width: 100%;
+    height: 8vh;
+    
+    background-color: cadetblue;
+    border-radius: 0% 0% 20% 20%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.8rem;
+
+    color: white;
+}
+
+#foot {
+    border-top: solid 3px rgba(95, 158, 160, 0.675);
+
+    height: 10vh;
+
+    position:absolute;
+
+    bottom:0;
+    
+    width:100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(173, 173, 173);
+}
+
+.text-center{
+	color:cadetblue;	
+	text-transform:uppercase;
+    font-size: 25px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+}
+.box{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	border-radius:3px;
+	padding:70px 100px;
+}
+
+.btn{
+	color:#fff;
+	background-color:#e74c3c;
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:30px;
+	border-radius:20px;
+    width: 100%;
+	cursor:pointer;
+	position:relative;
+}
+.btn:hover{
+    background-color:#e2331f;
+    transition: 1s;
+}
+
+.case {
+    border-color:cadetblue;
+    color: cadetblue;
+    background-color: white;
+
+    border-width: 0.2em;
+    border-style:solid;
+    
+    font-size:110%;
+
+    height:90%;
+    width: 45vmax;
+   
+    border-radius: 5px;
+
+    margin: 3vh;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+#name-setting {
+    margin-left: 5px;
+}
+
+p {
+    color: #e2331f;
+
+    margin-left: 5px;
+}

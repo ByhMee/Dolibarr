@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dolibarrap-Remboursement</title>
+    <link rel="stylesheet" href="remboursement.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+</head>
+
+<body>
+    <head>
+        <div id="nav">
+            <h1 class="title">DOLIBARRAP</h1>
+        </div>
+    </head>
+
+    <body>
+    </main>
+        <div class="box">
+            <form>
+                <span class="text-center">Remboursement</span>
+
+                <div class="input-container">		
+                    <input id="euro" type="number" min="0"  required=""/>
+                    <label>Remboursement 💸​</label>
+                </div>
+
+            <div class="input-container">
+                <input id="libelle" type="text" maxlength="25" required=""/>
+                <label>Libéllé ​✏️​</label>		
+            </div>
+
+            <div class="input-container">
+                <input id="date1" type="date" required=""/>
+                <label>Date de début 📅​</label>		
+            </div>
+
+            <div class="input-container">
+                <input id="date2" type="date" required=""/>
+                <label>Date de fin 📆​</label>		
+            </div>
+            <div id="class-btn-img">
+                <input type="file" class="avatar" name="avatar" accept="image/png, image/jpeg" onclick="img()">
+            </div>
+
+            
+                <button type="button" class="btn" onclick="store()" >Accepter</button>
+                <button type="button" class="btn" onclick="window.location.href = 'acccueil.html';">Retour</button>
+        </form>	
+        </div>
+    </main>
+    <footer>
+        <div id="foot">
+            <h4>Matthis HANS - BTS SIO2</h4>
+        </div>
+    </footer>
+
+    <script src="script-r.js"></script>
+
+</body>
+
+</html>

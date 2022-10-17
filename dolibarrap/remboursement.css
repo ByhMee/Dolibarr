@@ -1,0 +1,163 @@
+:root {
+    --ColorBG:rgb(255, 255, 255);
+    --ColorW:white;
+    --ColorCa:cadetblue;
+    --ColorGrey:rgb(173, 173, 173);
+    --ColorO:#e74c3c;	
+    --ColorOF:#e2331f;
+}
+
+::-moz-selection{           /* Change la couleur quand on surligne un élément */
+    background-color : rgb(130, 217, 207);
+    color : #fff;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    height: 95vh;
+    width: 100%;
+
+    background-color: var(--ColorBG);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/* HEADER */
+
+#nav {
+    width: 100%;
+    height: 8vh;
+    
+    background-color: var(--ColorCa);
+    border-radius: 0% 0% 20% 20%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.8rem;
+
+    color: var(--ColorW);
+}
+
+#foot {
+    border-top: solid 3px rgba(95, 158, 160, 0.675);
+
+    height: 50px;
+
+    position:absolute;
+
+    bottom:0;
+    
+    width:100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--ColorGrey);
+}
+
+
+.text-center{
+	color:var(--ColorCa);	
+	text-transform:uppercase;
+    font-size: 25px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+}
+.box{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	border-radius:3px;
+	padding:70px 100px;
+}
+.input-container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input-container label{
+	position:absolute;
+	top:-12px;
+	left:0px;
+	font-size:16px;
+	color:var(--ColorCa);	
+	transition: all 0.5s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid cadetblue;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:var(--ColorCa);
+}
+.input-container input:focus{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
+.btn{
+	color:var(--ColorW);
+	background-color:var(--ColorO);
+	outline: none;
+    border: 0;
+    color:var(--ColorW);
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:30px;
+	border-radius:20px;
+    width: 100%;
+	cursor:pointer;
+	position:relative;
+}
+.btn:hover{
+    background-color:var(--ColorOF);
+    transition: 1s;
+}
+
+.class-btn-img {
+    height: 100%;
+    width: 100%;
+}
+
+.btn-img {
+    border-color:var(--ColorCa);
+    color: var(--ColorCa);
+    background-color: var(--ColorW);
+    border-width: 0.2em;
+    border-style: solid; 
+    
+	padding:5px 15px;
+	text-transform:uppercase;
+	margin-top:30px;
+    width: 100%;
+	cursor:pointer;
+	position:relative;
+}
+.btn-img:active{
+    background-color:var(--ColorCa);
+    color: var(--ColorW);
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+	
+}
+
